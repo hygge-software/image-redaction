@@ -1,13 +1,23 @@
 {
   "name": "image-redaction",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/main.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prettier": "npx prettier --write ./src"
+    "prettier": "npx prettier --write ./src",
+    "eslint": "npx eslint ./src/**/*.ts"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.1",
