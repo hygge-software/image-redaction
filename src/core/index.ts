@@ -1,0 +1,9 @@
+export { IocContainer } from './ioc-container';
+export { StyleConfigurator } from './style-configurator';
+export { ComponentFactory } from './component-factory';
+export { Component } from './component';
+export { Core } from './core';
+export { RedactionItem } from './redaction-item';
+export { getColorVariable } from './color';
+export { Commands } from './commands';
+export { MatrixManager } from './matrix-manager';
