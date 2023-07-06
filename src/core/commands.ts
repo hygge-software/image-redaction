@@ -1,4 +1,4 @@
-import { DecoratedFrame } from '~/models';
+import { DecoratedFrame } from '../models';
 
 import { Core } from './core';
 import { MatrixManager } from './matrix-manager';

@@ -1,9 +1,9 @@
-import { Component, IocContainer } from '~/core';
-import { extractPosition, percentageToPx, pxToPercentage } from '~/utils';
-import { EDGE_SIDES } from '~/constants';
-import { ROOT_ELEMENT_TOKEN } from '~/tokens';
-import { StyledComponent } from '~/decorators';
-import { ComponentsMediator } from '~/models';
+import { Component, IocContainer } from '../core';
+import { extractPosition, percentageToPx, pxToPercentage } from '../utils';
+import { EDGE_SIDES } from '../constants';
+import { ROOT_ELEMENT_TOKEN } from '../tokens';
+import { StyledComponent } from '../decorators';
+import { ComponentsMediator } from '../models';
 
 @StyledComponent(`
   .edge {

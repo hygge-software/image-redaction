@@ -1,7 +1,7 @@
-import { getColorVariable, IocContainer } from '~/core';
-import { StyledComponent } from '~/decorators';
-import { ROOT_ELEMENT_TOKEN } from '~/tokens';
-import { THRESHOLD_SIZE } from '~/constants';
+import { getColorVariable, IocContainer } from '../core';
+import { StyledComponent } from '../decorators';
+import { ROOT_ELEMENT_TOKEN } from '../tokens';
+import { THRESHOLD_SIZE } from '../constants';
 
 import { Square } from './square';
 

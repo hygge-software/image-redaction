@@ -1,4 +1,4 @@
-import { StyledComponent } from '~/models';
+import { StyledComponent } from '../models';
 
 const INITIAL_STYLE = `
   * {

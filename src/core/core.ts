@@ -1,5 +1,5 @@
-import { Matrix, Position } from '~/models';
-import { ActionType } from '~/constants';
+import { Matrix, Position } from '../models';
+import { ActionType } from '../constants';
 
 import { IocContainer } from './ioc-container';
 import { RedactionItem } from './redaction-item';

@@ -1,5 +1,5 @@
-import { isString } from '~/utils';
-import { Destroyable } from '~/models';
+import { isString } from '../utils';
+import { Destroyable } from '../models';
 
 export class Component<K extends HTMLElement = HTMLElement> implements Destroyable {
   public readonly element: K;

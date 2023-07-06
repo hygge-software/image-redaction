@@ -1,7 +1,7 @@
-import { ComponentsMediator, DecoratedFrame, Destroyable, MatrixItem, Position } from '~/models';
-import { ComponentsContainer, Edge, InteractiveSquare, Label } from '~/components';
-import { ActionType, EDGE_SIDES, THRESHOLD_SIZE } from '~/constants';
-import { IS_READONLY_TOKEN } from '~/tokens';
+import { ComponentsMediator, DecoratedFrame, Destroyable, MatrixItem, Position } from '../models';
+import { ComponentsContainer, Edge, InteractiveSquare, Label } from '../components';
+import { ActionType, EDGE_SIDES, THRESHOLD_SIZE } from '../constants';
+import { IS_READONLY_TOKEN } from '../tokens';
 
 import { ComponentFactory } from './component-factory';
 import { IocContainer } from './ioc-container';

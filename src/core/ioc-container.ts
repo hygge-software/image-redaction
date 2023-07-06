@@ -1,4 +1,4 @@
-import { Destroyable } from '~/models';
+import { Destroyable } from '../models';
 
 export class IocContainer implements Destroyable {
   private _servicesMap = new Map();

@@ -1,4 +1,4 @@
-import { StyledComponent } from '~/models';
+import { StyledComponent } from '../models';
 
 export function StyledComponent(style: string): ClassDecorator {
   return function (constructor): void {

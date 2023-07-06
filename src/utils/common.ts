@@ -1,4 +1,4 @@
-import { Position } from '~/models';
+import { Position } from '../models';
 
 export const extractPosition = (style: CSSStyleDeclaration): Position => {
   const { left, top, right, bottom } = style;

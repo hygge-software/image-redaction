@@ -1,6 +1,6 @@
-import { Component, ComponentFactory, Core, IocContainer } from '~/core';
-import { StyledComponent } from '~/decorators';
-import { IS_READONLY_TOKEN } from '~/tokens';
+import { Component, ComponentFactory, Core, IocContainer } from '../core';
+import { StyledComponent } from '../decorators';
+import { IS_READONLY_TOKEN } from '../tokens';
 
 import { DraftSquare } from './draft-square';
 

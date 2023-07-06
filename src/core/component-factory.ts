@@ -1,4 +1,4 @@
-import { StyledComponent } from '~/models';
+import { StyledComponent } from '../models';
 
 import { StyleConfigurator } from './style-configurator';
 

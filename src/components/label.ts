@@ -1,8 +1,8 @@
-import { Component, getColorVariable, IocContainer, MatrixManager } from '~/core';
-import { StyledComponent } from '~/decorators';
-import { ComponentsMediator, Matrix } from '~/models';
-import { stopPropagation } from '~/utils';
-import { Subscription } from '~/common';
+import { Component, getColorVariable, IocContainer, MatrixManager } from '../core';
+import { StyledComponent } from '../decorators';
+import { ComponentsMediator, Matrix } from '../models';
+import { stopPropagation } from '../utils';
+import { Subscription } from '../common';
 
 @StyledComponent(`
   .label {

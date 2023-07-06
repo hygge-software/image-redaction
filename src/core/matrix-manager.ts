@@ -1,6 +1,6 @@
-import { EventObserver, Subscription } from '~/common';
-import { ActionType } from '~/constants';
-import { Destroyable, Matrix } from '~/models';
+import { EventObserver, Subscription } from '../common';
+import { ActionType } from '../constants';
+import { Destroyable, Matrix } from '../models';
 
 import { RedactionItem } from './redaction-item';
 

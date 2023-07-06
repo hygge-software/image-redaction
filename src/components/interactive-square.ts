@@ -1,8 +1,8 @@
-import { percentageToPx } from '~/utils';
-import { getColorVariable, IocContainer } from '~/core';
-import { IS_READONLY_TOKEN, ROOT_ELEMENT_TOKEN } from '~/tokens';
-import { StyledComponent } from '~/decorators';
-import { ComponentsMediator } from '~/models';
+import { percentageToPx } from '../utils';
+import { getColorVariable, IocContainer } from '../core';
+import { IS_READONLY_TOKEN, ROOT_ELEMENT_TOKEN } from '../tokens';
+import { StyledComponent } from '../decorators';
+import { ComponentsMediator } from '../models';
 
 import { Square } from './square';
 

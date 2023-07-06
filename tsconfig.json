@@ -20,12 +20,7 @@
     "noFallthroughCasesInSwitch": true,
 
     "experimentalDecorators": true,
-    "baseUrl": "./",
-    "paths": {
-      "~/*": [
-        "src/*"
-      ]
-    }
+    "baseUrl": "./"
   },
   "include": ["src"],
   "exclude": ["node_modules"]

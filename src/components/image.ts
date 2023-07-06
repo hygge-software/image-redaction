@@ -1,5 +1,5 @@
-import { Component } from '~/core';
-import { StyledComponent } from '~/decorators';
+import { Component } from '../core';
+import { StyledComponent } from '../decorators';
 
 @StyledComponent(`
   img {

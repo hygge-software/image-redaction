@@ -1,6 +1,6 @@
-import { Component } from '~/core';
-import { extractPosition, pxToPercentage } from '~/utils';
-import { Position } from '~/models';
+import { Component } from '../core';
+import { extractPosition, pxToPercentage } from '../utils';
+import { Position } from '../models';
 
 export class Square extends Component {
   constructor(protected readonly rootElement: HTMLElement, classNames: string | string[]) {
