@@ -27,8 +27,8 @@ export class ComponentsContainer extends Component {
 
     let elementRect = this.element.getBoundingClientRect();
 
-    const mousedownX = mousedownEvt.pageX - elementRect.left;
-    const mousedownY = mousedownEvt.pageY - elementRect.top;
+    const mousedownX = mousedownEvt.clientX - elementRect.left;
+    const mousedownY = mousedownEvt.clientY - elementRect.top;
 
     draftSquare.draw(mousedownX, mousedownY, mousedownX, mousedownY);
 
@@ -37,7 +37,7 @@ export class ComponentsContainer extends Component {
       elementRect = this.element.getBoundingClientRect();
 
       /* px, e.g 234,23522 */
-      let mousemoveX = mousemoveEvt.pageX - elementRect.left;
+      let mousemoveX = mousemoveEvt.clientX - elementRect.left;
 
       if (mousemoveX < 0) {
         mousemoveX = 0;
@@ -48,7 +48,7 @@ export class ComponentsContainer extends Component {
       }
 
       /* px, e.g 234,23522 */
-      let mousemoveY = mousemoveEvt.pageY - elementRect.top;
+      let mousemoveY = mousemoveEvt.clientY - elementRect.top;
 
       if (mousemoveY < 0) {
         mousemoveY = 0;

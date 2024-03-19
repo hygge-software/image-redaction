@@ -70,8 +70,8 @@ export class InteractiveSquare extends Square {
 
     let rootElementRect = rootElement.getBoundingClientRect();
 
-    const mousedownX = mousedownEvt.pageX - rootElementRect.left;
-    const mousedownY = mousedownEvt.pageY - rootElementRect.top;
+    const mousedownX = mousedownEvt.clientX - rootElementRect.left;
+    const mousedownY = mousedownEvt.clientY - rootElementRect.top;
 
     /* px, e.g. 234,23 */
     const initialLeft = percentageToPx(this.element.style.left, rootElementRect.width);
@@ -85,8 +85,8 @@ export class InteractiveSquare extends Square {
       const elementHeight = this.element.offsetHeight;
 
       /* px, e.g 234,23522 */
-      const mousemoveX = mousemoveEvt.pageX - rootElementRect.left;
-      const mousemoveY = mousemoveEvt.pageY - rootElementRect.top;
+      const mousemoveX = mousemoveEvt.clientX - rootElementRect.left;
+      const mousemoveY = mousemoveEvt.clientY - rootElementRect.top;
 
       const deltaX = mousemoveX - mousedownX;
       const deltaY = mousemoveY - mousedownY;

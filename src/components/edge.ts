@@ -101,7 +101,7 @@ export class Edge extends Component {
       const rootElementRect = rootElement.getBoundingClientRect();
 
       /* px, e.g. 234.23522 */
-      let mousemoveX = mousemoveEvt.pageX - rootElementRect.left;
+      let mousemoveX = mousemoveEvt.clientX - rootElementRect.left;
 
       if (mousemoveX < 0) {
         mousemoveX = 0;
@@ -112,7 +112,7 @@ export class Edge extends Component {
       }
 
       /* px, e.g. 234.23522 */
-      let mousemoveY = mousemoveEvt.pageY - rootElementRect.top;
+      let mousemoveY = mousemoveEvt.clientY - rootElementRect.top;
 
       if (mousemoveY < 0) {
         mousemoveY = 0;
