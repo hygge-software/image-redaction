@@ -8,14 +8,14 @@ import { Square } from './square';
 @StyledComponent(`
   .draft-square {
     position: absolute;
-    border: 2px dotted rgb(${getColorVariable('PRIMARY')});
-    border-radius: 4px;
-    background-color: rgb(${getColorVariable('PRIMARY')} / 0.1);
+    border: 2px dotted rgb(${getColorVariable('SQUARE_EDGE')});
+    border-radius: var(--rd-square-border-radius, 4px);
+    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')}, var(--rd-square-draft-background-opacity, 0.1));
   }
   
   .draft-square--error {
-    border: 2px dotted rgb(${getColorVariable('ERROR')});
-    background-color: rgb(${getColorVariable('ERROR')} / 0.1);
+    border: 2px dotted rgb(${getColorVariable('SQUARE_ERROR')});
+    background-color: rgb(${getColorVariable('SQUARE_ERROR')}, var(--rd-square-error-background-opacity, 0.1));
   }
 `)
 export class DraftSquare extends Square {

@@ -14,10 +14,10 @@ import { Subscription } from '../common';
     display: grid;
     user-select: none;
     place-items: center;
-    border: 1px solid rgb(${getColorVariable('PRIMARY')});
-    color: rgb(${getColorVariable('TEXT')});
+    border: 1px solid rgb(${getColorVariable('LABEL_BORDER')});
+    color: rgb(${getColorVariable('LABEL_TEXT')});
     border-radius: 50%;
-    background-color: rgb(${getColorVariable('TEXT_BACKGROUND')});
+    background-color: rgb(${getColorVariable('LABEL_BACKGROUND')});
     font-weight: 700;
     line-height: 1em;
     top: 0;
@@ -27,8 +27,9 @@ import { Subscription } from '../common';
   }
   
   .label--active {
-    background-color: rgb(${getColorVariable('ACCENT')});
-    border: 1px solid rgb(${getColorVariable('ACCENT')});
+    background-color: rgb(${getColorVariable('LABEL_BACKGROUND_ACTIVE')});
+    border: 1px solid rgb(${getColorVariable('LABEL_BORDER_ACTIVE')});
+    color: rgb(${getColorVariable('LABEL_TEXT_ACTIVE')});
   }
   
   .label--expanded {

@@ -9,27 +9,27 @@ import { Square } from './square';
 @StyledComponent(`
   .square {
     position: absolute;
-    border: 2px solid rgb(${getColorVariable('PRIMARY')});
-    background-color: rgb(${getColorVariable('PRIMARY')} / 0.05);
-    border-radius: 4px;
+    border: 2px solid rgb(${getColorVariable('SQUARE_EDGE')});
+    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')}, var(--rd-square-background-opacity, 0.05));
+    border-radius: var(--rd-square-border-radius, 4px);
   }
   
   .square--error {
-    border: 2px solid rgb(${getColorVariable('ERROR')});
-    background-color: rgb(${getColorVariable('ERROR')} / 0.1);
+    border: 2px solid rgb(${getColorVariable('SQUARE_ERROR')});
+    background-color: rgb(${getColorVariable('SQUARE_ERROR')}, var(--rd-square-error-background-opacity, 0.1));
   }
   
   .square--blur {
     border: 2px solid transparent;
-    background-color: rgb(${getColorVariable('PRIMARY')});
+    background-color: rgb(${getColorVariable('SQUARE_BLUR')});
   }
   
   .square--highlight:not(.square--blur) {
-    border: 2px solid rgb(${getColorVariable('PRIMARY')});
+    border: 2px solid rgb(${getColorVariable('SQUARE_HIGHLIGHTED')});
   }
   
   .square--highlight.square--blur {
-    border: 4px solid rgb(${getColorVariable('ACCENT')});
+    border: 4px solid rgb(${getColorVariable('SQUARE_BLUR_AND_HIGHLIGHTED')});
   }
 `)
 export class InteractiveSquare extends Square {
