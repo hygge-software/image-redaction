@@ -10,13 +10,13 @@ import { Square } from './square';
   .square {
     position: absolute;
     border: 2px solid rgb(${getColorVariable('SQUARE_EDGE')});
-    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')}, var(--rd-square-background-opacity, 0.05));
+    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')} / var(--rd-square-background-opacity, 0.05));
     border-radius: var(--rd-square-border-radius, 4px);
   }
   
   .square--error {
     border: 2px solid rgb(${getColorVariable('SQUARE_ERROR')});
-    background-color: rgb(${getColorVariable('SQUARE_ERROR')}, var(--rd-square-error-background-opacity, 0.1));
+    background-color: rgb(${getColorVariable('SQUARE_ERROR')} / var(--rd-square-error-background-opacity, 0.1));
   }
   
   .square--blur {

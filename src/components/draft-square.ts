@@ -10,12 +10,12 @@ import { Square } from './square';
     position: absolute;
     border: 2px dotted rgb(${getColorVariable('SQUARE_EDGE')});
     border-radius: var(--rd-square-border-radius, 4px);
-    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')}, var(--rd-square-draft-background-opacity, 0.1));
+    background-color: rgb(${getColorVariable('SQUARE_BACKGROUND')} / var(--rd-square-draft-background-opacity, 0.1));
   }
   
   .draft-square--error {
     border: 2px dotted rgb(${getColorVariable('SQUARE_ERROR')});
-    background-color: rgb(${getColorVariable('SQUARE_ERROR')}, var(--rd-square-error-background-opacity, 0.1));
+    background-color: rgb(${getColorVariable('SQUARE_ERROR')} / var(--rd-square-error-background-opacity, 0.1));
   }
 `)
 export class DraftSquare extends Square {
